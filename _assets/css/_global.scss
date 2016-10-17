@@ -44,7 +44,7 @@ p, ul, ol, pre, table, blockquote {
 
 // https://www.smashingmagazine.com/2010/02/the-definitive-guide-to-styling-web-links/
 a:link, a:visited, a:focus, a:active {
-  color: #0087bd;
+  color: $secondary-color;
   text-decoration: none;
 }
 
