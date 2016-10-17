@@ -1,0 +1,24 @@
+.homepage {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  &__headshot {
+    border-radius: 50%;
+    height: 6rem;
+  }
+
+  & h1 {
+    margin: 1.5rem 0 0 0;
+    text-transform: uppercase;
+  }
+
+  & h2 {
+    margin: 0;
+    font-weight: 300;
+  }
+
+  & p {
+    align-self: flex-start;
+  }
+}

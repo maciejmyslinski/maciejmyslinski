@@ -1,3 +1,20 @@
+html {
+  box-sizing: border-box;
+  color: $base-color;
+
+  @include media-query($breakpoint-1) {
+    font-size: 18px;
+  }
+
+  @include media-query($breakpoint-2) {
+    font-size: 20px;
+  }
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   @include sgl-body($sgl-base-font-size, $sgl-base-unit);
@@ -21,11 +38,35 @@ h4 {
 
 p, ul, ol, pre, table, blockquote {
     @include sgl-margins();
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+// https://www.smashingmagazine.com/2010/02/the-definitive-guide-to-styling-web-links/
+a:link, a:visited, a:focus, a:active {
+  color: #0087bd;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .wrapper {
   margin: 0 auto;
   padding: 0 1rem;
   width: 100%;
+  max-width: 40rem;
+}
+
+.typography-wrapper {
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+  text-align: left;
   max-width: 25rem;
+}
+
+.page-content {
+  margin-bottom: 3rem;
 }

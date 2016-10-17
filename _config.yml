@@ -32,6 +32,8 @@ gems:
   - jekyll-assets
 
 assets:
+  assets:
+    - "*.jpg"
   sources:
     - _assets/bower
   autoprefixer:
