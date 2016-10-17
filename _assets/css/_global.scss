@@ -1,7 +1,5 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  margin-left: 1rem;
-  margin-right: 1rem;
   @include sgl-body($sgl-base-font-size, $sgl-base-unit);
 }
 
@@ -23,4 +21,11 @@ h4 {
 
 p, ul, ol, pre, table, blockquote {
     @include sgl-margins();
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 25rem;
 }

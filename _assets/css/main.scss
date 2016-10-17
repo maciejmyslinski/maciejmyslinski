@@ -1,7 +1,8 @@
 @charset "utf-8";
 @import
   "reset",
-  "sassy-gridlover/sassy-gridlover/_sassy-gridlover";
+  "sassy-gridlover/sassy-gridlover/_sassy-gridlover",
+  "modular-scale/stylesheets/modular-scale";
 
 
 
@@ -34,6 +35,10 @@ $sgl-base-font-size: 16;
 $sgl-scale-factor: $MINOR_THIRD;
 $sgl-base-line-height: 1.5;
 
+// Modular-scale variables
+// https://github.com/modularscale/modularscale-sass
+$ms-base: 1rem;
+$ms-ratio: $minor-third;
 
 
 // Use media queries like this:
@@ -49,4 +54,7 @@ $sgl-base-line-height: 1.5;
     }
 }
 
-@import "global";
+@import
+  "global",
+  "icons",
+  "site-header";
