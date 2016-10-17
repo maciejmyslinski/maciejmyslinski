@@ -5,3 +5,4 @@ node_modules
 .asset-cache
 .DS_Store
 bower
+s3_website.yml

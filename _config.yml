@@ -32,6 +32,8 @@ gems:
   - jekyll-assets
 
 assets:
+  compress:
+    css: true
   assets:
     - "*.jpg"
     - "favicon/*.*"
