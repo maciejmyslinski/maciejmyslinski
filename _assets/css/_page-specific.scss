@@ -3,14 +3,43 @@
   flex-flow: column wrap;
   align-items: center;
 
+  &__media-object {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    @include media-query($breakpoint-2) {
+      padding: 1.5rem 0;
+      flex-flow: row nowrap;
+    };
+  }
+
+  &__media-object-text {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    @include media-query($breakpoint-2) {
+      padding: 0 0 0 1rem;
+    };
+  }
+
   &__headshot {
     border-radius: 50%;
-    height: 6rem;
+    height: 7.5rem;
+
+    @include media-query($breakpoint-2) {
+      height: 7.5rem;
+    };
   }
 
   & h1 {
     margin: 1.5rem 0 0 0;
     text-transform: uppercase;
+
+    @include media-query($breakpoint-2) {
+      margin: 0;
+    };
   }
 
   & h2 {
