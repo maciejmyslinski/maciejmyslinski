@@ -1,0 +1,77 @@
+// Scale factor constants.
+// Don't change them ever!
+$MINOR_SECOND: 1.067;
+$MAJOR_SECOND: 1.125;
+$MINOR_THIRD: 1.2;
+$MAJOR_THIRD: 1.25;
+$PERFECT_FOURTH: 1.333;
+$AUGMENTED_FOURTH: 1.414;
+$PERFECT_FIFTH: 1.5;
+$MINOR_SIXTH: 1.6;
+$GOLDEN_SECTION: 1.618;
+$MAJOR_SIXTH: 1.667;
+$MINOR_SEVENTH: 1.778;
+$MAJOR_SEVENTH: 1.875;
+$OCTAVE: 2;
+$MAJOR_TENTH: 2.5;
+$MAJOR_ELEVENTH: 2.667;
+$MAJOR_TWELFTH: 3;
+$DOUBLE_OCTAVE: 4;
+
+// Default font size.
+// Don't change it ever!
+$SGL_DEFAULT_FONT_SIZE: 16;
+
+// Configurable variables.
+// Ok... You can change these variables! :D
+// Although I'd encourage you not to change them directly here.
+// I'd rather declare them in your `_variables.scss`, `_config.scss` or the like.
+
+/// Enables/disables **Debug mode** (`true`/`false`).
+///
+/// Outputs background lines imitating a notebook's sheet.
+///
+/// Declare it in your own `_variables.scss`, `_config.scss` or the like.
+///
+/// Basically, it must be declared before the `@import "sassy-gridlover"`.
+/// 
+/// @example scss
+/// 	$sgl-debug-mode: true;
+///
+/// @example css
+/// 	html {
+/// 		background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px);
+/// 		background-position: left -1px;
+/// 		background-repeat: repeat;
+///  		background-size: 22px 22px;
+/// 	}
+/// 
+/// 	body {
+/// 		box-shadow: 1px 0px 0px rgba(0, 170, 255, 0.3), -1px 0px 0px rgba(0, 170, 255, 0.3);
+/// 		margin: 0 auto;
+/// 		max-width: 75%;
+/// 		padding: 22px;
+/// 	}
+/// 
+/// @type boolean
+$sgl-debug-mode: false !default;
+
+/// Base font size.
+///
+/// @type number
+$sgl-base-font-size: 18 !default;
+
+/// Base line height.
+///
+/// @type number
+$sgl-base-line-height: 1.2 !default;
+
+/// Base unit (`px`, `em`, `rem`, `pxrem`).
+///
+/// @type string
+$sgl-base-unit: "pxrem" !default;
+
+/// Scale factor.
+///
+/// @type number
+$sgl-scale-factor: $GOLDEN_SECTION !default;
