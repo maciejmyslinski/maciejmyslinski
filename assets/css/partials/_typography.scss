@@ -1,0 +1,29 @@
+$sgl-debug-mode: false;
+
+@import "../../node_modules/sassy-gridlover/sassy-gridlover/_sassy-gridlover";
+
+$sgl-scale-factor: $MINOR_THIRD;
+
+body {
+  @include sgl-body();
+}
+
+h1 {
+  @include sgl-heading(3);
+}
+
+h2 {
+  @include sgl-heading(2);
+}
+
+h3 {
+  @include sgl-heading(1);
+}
+
+h4 {
+  @include sgl-heading(0);
+}
+
+p, ul, ol, pre, table, blockquote {
+    @include sgl-margins();
+}

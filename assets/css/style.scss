@@ -1,1 +1,10 @@
 @import "./partials/_reset";
+@import "./partials/_typography";
+
+@import "../../node_modules/modularscale-sass/stylesheets/_modular-scale";
+$ms-base: 1rem;
+$ms-ratio: $octave;
+
+body {
+  padding: ms(0);
+}
