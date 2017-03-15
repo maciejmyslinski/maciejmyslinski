@@ -12,10 +12,18 @@ abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
 table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 input,select{vertical-align:middle}
-body{font-size:18px;line-height:22px;font-size:1.125rem;line-height:1.375rem}
-h1{font-size:31px;line-height:44px;margin-bottom:44px;margin-top:22px;font-size:1.9375rem;line-height:2.75rem;margin-bottom:2.75rem;margin-top:1.375rem}
-h2{font-size:26px;line-height:44px;margin-bottom:22px;margin-top:22px;font-size:1.625rem;line-height:2.75rem;margin-bottom:1.375rem;margin-top:1.375rem}
-h3{font-size:22px;line-height:22px;margin-bottom:0;margin-top:22px;font-size:1.375rem;line-height:1.375rem;margin-bottom:0;margin-top:1.375rem}
-h4{font-size:18px;line-height:22px;margin-bottom:0;margin-top:22px;font-size:1.125rem;line-height:1.375rem;margin-bottom:0;margin-top:1.375rem}
-p,ul,ol,pre,table,blockquote{margin-bottom:22px;margin-top:0;margin-bottom:1.375rem;margin-top:0}
-body{padding:1rem}
+@font-face{font-family:'charis_silbold';src:url("assets/fonts/charissilb-webfont.woff2") format("woff2"),url("assets/fonts/charissilb-webfont.woff") format("woff");font-weight:normal;font-style:normal}
+@font-face{font-family:'charis_silbold_italic';src:url("assets/fonts/charissilbi-webfont.woff2") format("woff2"),url("assets/fonts/charissilbi-webfont.woff") format("woff");font-weight:normal;font-style:normal}
+@font-face{font-family:'charis_silitalic';src:url("assets/fonts/charissili-webfont.woff2") format("woff2"),url("assets/fonts/charissili-webfont.woff") format("woff");font-weight:normal;font-style:normal}
+@font-face{font-family:'charis_silregular';src:url("assets/fonts/charissilr-webfont.woff2") format("woff2"),url("assets/fonts/charissilr-webfont.woff") format("woff");font-weight:normal;font-style:normal}
+body{font-family:"charis_silregular"}
+.site-branding__link{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+.site-branding__logo{width:376px;max-width:100%}
+.main-navigation{position:fixed;right:0;bottom:0;left:0;background-color:#edf0f5;box-shadow:0 -2px 2px 0 rgba(0,0,0,0.14);color:rgba(0,0,0,0.82);text-decoration:none}
+html{font-size:21px}
+body{color:rgba(38,38,38,0.87)}
+a{color:inherit}
+.site{max-width:30rem;margin:0 auto}
+h1,h2,h3,h4{font-family:'Source Sans Pro',sans-serif}
+h1 a,h2 a,h3 a,h4 a{text-decoration:none}
+ul{padding-left:20px}

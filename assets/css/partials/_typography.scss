@@ -1,29 +1,33 @@
-$sgl-debug-mode: false;
+// $sgl-base-line-height: 1.6;
+// $sgl-scale-factor: 1.25;
+// $sgl-base-unit: "rem";
 
-@import "../../node_modules/sassy-gridlover/sassy-gridlover/_sassy-gridlover";
+// @import "../../node_modules/sassy-gridlover/sassy-gridlover/_sassy-gridlover";
+@import "./charis-font";
 
-$sgl-scale-factor: $MINOR_THIRD;
-
+// $sgl-scale-factor: $MAJOR_THIRD;
+//
 body {
-  @include sgl-body();
+  // @include sgl-body();
+  font-family: "charis_silregular";
 }
-
-h1 {
-  @include sgl-heading(3);
-}
-
-h2 {
-  @include sgl-heading(2);
-}
-
-h3 {
-  @include sgl-heading(1);
-}
-
-h4 {
-  @include sgl-heading(0);
-}
-
-p, ul, ol, pre, table, blockquote {
-    @include sgl-margins();
-}
+//
+// h1 {
+//   @include sgl-heading(3);
+// }
+//
+// h2 {
+//   @include sgl-heading(2);
+// }
+//
+// h3 {
+//   @include sgl-heading(1);
+// }
+//
+// h4 {
+//   @include sgl-heading(0);
+// }
+//
+// p, ul, ol, pre, table, blockquote {
+//     @include sgl-margins();
+// }

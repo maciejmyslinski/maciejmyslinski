@@ -61,7 +61,7 @@ var jsCustomFile            = 'custom'; // Compiled JS custom file name.
 
 // Images related.
 var imagesSRC               = './assets/img/raw/**/*.{png,jpg,gif,svg}'; // Source folder of images which should be optimized.
-var imagesDestination       = './assets/img/'; // Destination folder of optimized images. Must be different from the imagesSRC folder.
+var imagesDestination       = './img/'; // Destination folder of optimized images. Must be different from the imagesSRC folder.
 
 // Watch files paths.
 var styleWatchFiles         = './assets/css/**/*.scss'; // Path to all *.scss files inside css folder and inside them.

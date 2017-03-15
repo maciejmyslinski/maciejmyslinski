@@ -1,10 +1,41 @@
+@import "./partials/_variables";
+// @import "../../node_modules/modularscale-sass/stylesheets/_modular-scale";
+// $ms-base: 1.8125rem;
+// $ms-ratio: $octave;
+// $ms-range:
+//   1 20em,
+//   1.2 60em;
+
 @import "./partials/_reset";
 @import "./partials/_typography";
+@import "./partials/_header";
 
-@import "../../node_modules/modularscale-sass/stylesheets/_modular-scale";
-$ms-base: 1rem;
-$ms-ratio: $octave;
+html {
+  font-size: 21px;
+}
 
 body {
-  padding: ms(0);
+  // padding: ms(0);
+  color: map-get($colors, "black");
+  // @include ms-respond("font-size", 1.2);
+}
+
+a {
+  color: inherit;
+}
+
+.site {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  a {
+    text-decoration: none;
+  }
+}
+
+ul {
+  padding-left: 20px;
 }
