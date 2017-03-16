@@ -81,6 +81,7 @@ a:hover,a:active,a:focus{color:#0b348b;text-decoration:none}
 .single-measure{max-width:35.7142857143rem;margin:0 auto}
 .column{max-width:35.7142857143rem;margin:0 auto;width:100%}
 .show-grid{background-image:-webkit-linear-gradient(top,cyan 0,rgba(255,255,255,0) 1px);background-image:linear-gradient(to bottom,cyan 0,rgba(255,255,255,0) 1px);background-repeat:repeat-y;background-size:100% 1rem}
+.site-branding{padding:0 0 3rem 0}
 .site-branding__link{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
 .site-branding__logo{width:376px;max-width:100%}
 body{padding:2rem 1rem;color:rgba(38,38,38,0.87)}
