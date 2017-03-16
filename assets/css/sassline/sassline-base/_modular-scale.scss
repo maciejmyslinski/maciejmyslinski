@@ -1,0 +1,28 @@
+// Modular scale
+// ---------------------------------------
+
+// Setting responsive modular-scales. Use appropriate scales for viewport sizes.
+$modular-scale: (
+  scale-0: (
+    alpha:   ms(5, 18, 1.2),
+    beta:    ms(4, 18, 1.2),
+    gamma:   ms(3, 18, 1.2),
+    delta:   ms(2, 18, 1.2),
+    epsilon: ms(1, 18, 1.2),
+    zeta:    ms(0, 18, 1.2),
+    eta:     ms(-1, 18, 1.2),
+    theta:   ms(-2, 18, 1.2),
+    iota:    ms(-3, 18, 1.2)
+  ),
+  scale-1: (
+    alpha:   ms(5, 21, 1.25),
+    beta:    ms(4, 21, 1.25),
+    gamma:   ms(3, 21, 1.25),
+    delta:   ms(2, 21, 1.25),
+    epsilon: ms(1, 21, 1.25),
+    zeta:    ms(0, 21, 1.25),
+    eta:     ms(-1, 21, 1.25),
+    theta:   ms(-2, 21, 1.25),
+    iota:    ms(-3, 21, 1.25)
+  )
+);
