@@ -202,7 +202,7 @@ gulp.task( 'browser-sync', function() {
 
     .pipe( filter( '**/*.css' ) ) // Filtering stream to only css files
     .pipe( browserSync.stream() )// Reloads style.min.css if that is enqueued.
-    .pipe( notify( { message: 'TASK: "styles" Completed! 💯', onLast: true } ) )
+    // .pipe( notify( { message: 'TASK: "styles" Completed! 💯', onLast: true } ) )
  });
 
 
@@ -229,7 +229,7 @@ gulp.task( 'browser-sync', function() {
     .pipe( uglify() )
     .pipe( lineec() ) // Consistent Line Endings for non UNIX systems.
     .pipe( gulp.dest( jsVendorDestination ) )
-    .pipe( notify( { message: 'TASK: "vendorsJs" Completed! 💯', onLast: true } ) );
+    // .pipe( notify( { message: 'TASK: "vendorsJs" Completed! 💯', onLast: true } ) );
  });
 
 
@@ -256,7 +256,7 @@ gulp.task( 'browser-sync', function() {
     .pipe( uglify() )
     .pipe( lineec() ) // Consistent Line Endings for non UNIX systems.
     .pipe( gulp.dest( jsCustomDestination ) )
-    .pipe( notify( { message: 'TASK: "customJs" Completed! 💯', onLast: true } ) );
+    // .pipe( notify( { message: 'TASK: "customJs" Completed! 💯', onLast: true } ) );
  });
 
 
@@ -282,7 +282,7 @@ gulp.task( 'browser-sync', function() {
           svgoPlugins: [{removeViewBox: false}]
         } ) )
     .pipe(gulp.dest( imagesDestination ))
-    .pipe( notify( { message: 'TASK: "images" Completed! 💯', onLast: true } ) );
+    // .pipe( notify( { message: 'TASK: "images" Completed! 💯', onLast: true } ) );
  });
 
 
@@ -307,7 +307,7 @@ gulp.task( 'browser-sync', function() {
              team          : team
          } ))
         .pipe(gulp.dest(translatePath))
-        .pipe( notify( { message: 'TASK: "translate" Completed! 💯', onLast: true } ) )
+        // .pipe( notify( { message: 'TASK: "translate" Completed! 💯', onLast: true } ) )
 
  });
 

@@ -10,15 +10,27 @@ Version: 1.0
 @import "./partials/_variables";
 
 @import "../../node_modules/modularscale-sass/stylesheets/_modular-scale";
-$ms-base: 18px;
+$ms-base: 1rem;
 $ms-ratio: 1.2;
+$line-height: 1.58rem;
 
 @import "./partials/_reset";
 @import "./partials/_typography";
 @import "./partials/_header";
 
+html {
+  font-size: 18px;
+
+  @media (min-width: 714px) {
+    font-size: 21px;
+  }
+}
 
 body {
-  padding: 2rem 1rem;
+  padding: $line-height;
   color: map-get($colors, "black");
+  // font-size: ms(0);
+  line-height: $line-height;
+  max-width: 34rem;
+  margin: 0 auto;
 }
