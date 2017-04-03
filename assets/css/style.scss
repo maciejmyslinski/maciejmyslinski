@@ -29,12 +29,43 @@ html {
 
 body {
   color: map-get($colors, "black");
-  // font-size: ms(0);
   line-height: $line-height;
   max-width: 34rem;
   margin: 0 auto;
+  background-color: map-get($colors, "lightGray");
 }
 
-#content {
-  display: none;
+.site-content {
+  margin-top: $vertical-rythm;
+}
+
+.home .post {
+  background-color: hsl(0, 0, 100);
+  box-shadow: 0px 0px 2px hsla(0, 0, 0, .15);
+  font-family: Source Sans Pro, sans-serif;
+
+  &__link {
+    text-decoration: none;
+    color: map-get($colors, "black");
+    padding: $vertical-rythm;
+    display: block;
+  }
+
+  &__title {
+    margin: 0;
+    line-height: $vertical-rythm*3;
+  }
+
+  .posted-on {
+    font-size: ms(-1);
+    line-height: $line-height;
+    color: map-get($colors, "mediumGray");
+  }
+
+  &__more {
+    font-size: ms(-1);
+    line-height: $line-height;
+    color: map-get($colors, "mediumGray");
+    margin: 0;
+  }
 }
