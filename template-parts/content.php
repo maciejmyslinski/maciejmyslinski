@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<a href="<?php esc_url( get_permalink() )?>" rel="bookmark" class="post__link">
+	<a href="<?php echo esc_url(get_permalink())?>" rel="bookmark" class="post__link">
 		<header class="section typeset">
 			<?php
 			if ( 'post' === get_post_type() ) : ?>
@@ -49,8 +49,4 @@
 			// ) );
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php maciejmyslinski_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

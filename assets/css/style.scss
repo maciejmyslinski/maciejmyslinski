@@ -22,7 +22,7 @@ $vertical-rythm: $line-height/2;
 html {
   font-size: 18px;
 
-  @media (min-width: 714px) {
+  @media (min-width: 788px) {
     font-size: 21px;
   }
 }
@@ -30,19 +30,25 @@ html {
 body {
   color: map-get($colors, "black");
   line-height: $line-height;
-  max-width: 34rem;
-  margin: 0 auto;
   background-color: map-get($colors, "lightGray");
 }
 
 .site-content {
-  margin-top: $vertical-rythm;
+  max-width: 36rem;
+  margin: $vertical-rythm auto 0;
 }
 
 .home .post {
   background-color: hsl(0, 0, 100);
   box-shadow: 0px 0px 2px hsla(0, 0, 0, .15);
   font-family: Source Sans Pro, sans-serif;
+  margin-bottom: $vertical-rythm*2;
+
+  .wp-post-image {
+    max-width: 100%;
+    margin: $vertical-rythm auto;
+    height: auto;
+  }
 
   &__link {
     text-decoration: none;
