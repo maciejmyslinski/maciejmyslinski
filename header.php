@@ -23,16 +23,12 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding section">
-			<a class="site-branding__link" href="<?php echo get_home_url(); ?>">
-				<img class="site-branding__logo" src="<?php echo get_template_directory_uri() . "/img/logo-maciej-myslinski.png"; ?>" alt="logo Maciej Myślinski">
+	<header class="site-header" role="banner">
+			<a class="site-header__link" href="<?php echo get_home_url(); ?>">
+				<img class="site-header__logo"
+					src="<?php echo get_template_directory_uri() . "/img/logo-maciej-myslinski.png"; ?>"
+					alt="logo Maciej Myślinski">
 			</a>
-		</div><!-- .site-branding -->
-
-		<?php /*<nav id="site-navigation" class="main-navigation" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->*/?>
-	</header><!-- #masthead -->
+	</header>
 
 	<div id="content" class="site-content">

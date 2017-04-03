@@ -32,10 +32,11 @@ a,b,i,strong,em,small,code{line-height:0}
 sub,sup{line-height:0;position:relative;vertical-align:baseline}
 sup{top:-0.5em}
 sub{bottom:-0.25em}
-.site-branding{padding:0 0 1.58rem 0}
-.site-branding__link{height:3.16rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
-.site-branding__logo{width:376px;max-width:100%}
+.site-header{padding:.79rem;box-shadow:0 0 2px rgba(0,0,0,0.15)}
+.site-header__link{height:1.58rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+.site-header__logo{height:100%;width:auto}
 html{font-size:18px}
-body{padding:1.58rem;color:rgba(38,38,38,0.87);line-height:1.58rem;max-width:34rem;margin:0 auto}
+body{color:rgba(38,38,38,0.87);line-height:1.58rem;max-width:34rem;margin:0 auto}
+#content{display:none}
 @media(min-width:714px){html{font-size:21px}
 }

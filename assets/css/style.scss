@@ -13,6 +13,7 @@ Version: 1.0
 $ms-base: 1rem;
 $ms-ratio: 1.2;
 $line-height: 1.58rem;
+$vertical-rythm: $line-height/2;
 
 @import "./partials/_reset";
 @import "./partials/_typography";
@@ -27,10 +28,13 @@ html {
 }
 
 body {
-  padding: $line-height;
   color: map-get($colors, "black");
   // font-size: ms(0);
   line-height: $line-height;
   max-width: 34rem;
   margin: 0 auto;
+}
+
+#content {
+  display: none;
 }
