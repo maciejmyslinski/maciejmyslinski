@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<a href="<?php echo esc_url(get_permalink())?>" rel="bookmark" class="post__link">
+	<?php if( !is_single() ) {?><a href="<?php echo esc_url(get_permalink())?>" rel="bookmark" class="post__link"><?php } ?>
 		<header class="section typeset">
 			<?php
 			if ( 'post' === get_post_type() ) : ?>
@@ -30,10 +30,12 @@
 				the_post_thumbnail();
 			} ?>
 
-			<p class="post__more">Read more...</p>
+			<?php if( is_single() ) { the_content(); } ?>
+
+			<?php if( !is_single() ) {?><p class="post__more">Read more...</p><?php } ?>
 
 		</header>
-	</a>
+	<?php if( !is_single() ) {?></a><?php } ?>
 
 	<div class="section typeset">
 		<?php

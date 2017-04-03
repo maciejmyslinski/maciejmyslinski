@@ -30,7 +30,10 @@ html {
 body {
   color: map-get($colors, "black");
   line-height: $line-height;
-  background-color: map-get($colors, "lightGray");
+
+  &.home {
+    background-color: map-get($colors, "lightGray");
+  }
 }
 
 .site-content {
