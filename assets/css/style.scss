@@ -11,7 +11,7 @@ Version: 1.0
 
 @import "../../node_modules/modularscale-sass/stylesheets/_modular-scale";
 $ms-base: 1rem;
-$ms-ratio: 1.2;
+$ms-ratio: 1.25;
 $line-height: 1.58rem;
 $vertical-rythm: $line-height/2;
 
@@ -41,11 +41,20 @@ body {
   margin: $vertical-rythm auto 0;
 }
 
-.home .post {
-  background-color: hsl(0, 0, 100);
-  box-shadow: 0px 0px 2px hsla(0, 0, 0, .15);
+.post {
+  padding: $vertical-rythm;
   font-family: Source Sans Pro, sans-serif;
-  margin-bottom: $vertical-rythm*2;
+
+  .posted-on {
+    font-size: ms(-1);
+    line-height: $line-height;
+    color: map-get($colors, "mediumGray");
+    font-weight: 300;
+  }
+
+  h1 {
+    margin: 0 0 $vertical-rythm*2 0;
+  }
 
   .wp-post-image {
     max-width: 100%;
@@ -53,6 +62,13 @@ body {
     height: auto;
     margin: 0 0 $vertical-rythm 0;
   }
+}
+
+.home .post {
+  background-color: hsl(0, 0, 100);
+  box-shadow: 0px 0px 2px hsla(0, 0, 0, .15);
+  margin-bottom: $vertical-rythm*2;
+  padding: 0;
 
   &__link {
     text-decoration: none;
@@ -66,18 +82,12 @@ body {
     line-height: $vertical-rythm*3;
   }
 
-  .posted-on {
-    font-size: ms(-1);
-    line-height: $line-height;
-    color: map-get($colors, "mediumGray");
-    font-weight: 300;
-  }
-
   &__more {
     font-size: ms(-1);
     line-height: $line-height;
     color: map-get($colors, "mediumGray");
     margin: 0;
     font-weight: 300;
+    font-family: Source Sans Pro, Helvetica, sans-serif;
   }
 }

@@ -24,9 +24,10 @@ input,select{vertical-align:middle}
 @font-face{font-family:'charis_silitalic';src:url("assets/fonts/charissili-webfont.woff2") format("woff2"),url("assets/fonts/charissili-webfont.woff") format("woff");font-weight:normal;font-style:normal}
 @font-face{font-family:'charis_silregular';src:url("assets/fonts/charissilr-webfont.woff2") format("woff2"),url("assets/fonts/charissilr-webfont.woff") format("woff");font-weight:normal;font-style:normal}
 h1,h2,h3,h4,h5{font-family:Source Sans Pro,Helvetica,sans-serif}
-h1{font-size:2.0736rem;line-height:3.16rem;margin-top:1.58rem;margin-bottom:3.16rem}
-h2{font-size:1.728rem;line-height:3.16rem;margin-top:1.58rem;margin-bottom:1.58rem}
-p,ul,ol,pre,table,blockquote{font-size:1rem;margin-bottom:1.58rem}
+h1{font-size:2.44140625rem;line-height:3.16rem;margin-top:1.58rem;margin-bottom:1.58rem}
+h2{font-size:1.953125rem;line-height:2.37rem;margin-top:1.58rem;margin-bottom:1.58rem}
+h3{font-size:1.5625rem;line-height:2.37rem;margin-top:1.58rem;margin-bottom:1.58rem}
+p,ul,ol,pre,table,blockquote{font-size:1rem;margin-bottom:1.58rem;font-family:charis_silregular,serif}
 hr,.hr{border:1px solid;margin:-1px 0}
 a,b,i,strong,em,small,code{line-height:0}
 sub,sup{line-height:0;position:relative;vertical-align:baseline}
@@ -39,11 +40,13 @@ html{font-size:18px}
 body{color:rgba(38,38,38,0.87);line-height:1.58rem}
 body.home{background-color:#fafafa}
 .site-content{max-width:36rem;margin:.79rem auto 0}
-.home .post{background-color:white;box-shadow:0 0 2px rgba(0,0,0,0.15);font-family:Source Sans Pro,sans-serif;margin-bottom:1.58rem}
-.home .post .wp-post-image{max-width:100%;margin:0 auto;height:auto;margin:0 0 .79rem 0}
+.post{padding:.79rem;font-family:Source Sans Pro,sans-serif}
+.post .posted-on{font-size:.8rem;line-height:1.58rem;color:rgba(128,128,128,0.87);font-weight:300}
+.post h1{margin:0 0 1.58rem 0}
+.post .wp-post-image{max-width:100%;margin:0 auto;height:auto;margin:0 0 .79rem 0}
+.home .post{background-color:white;box-shadow:0 0 2px rgba(0,0,0,0.15);margin-bottom:1.58rem;padding:0}
 .home .post__link{text-decoration:none;color:rgba(38,38,38,0.87);padding:.79rem;display:block}
 .home .post__title{margin:0 0 .79rem 0;line-height:2.37rem}
-.home .post .posted-on{font-size:.8333333333rem;line-height:1.58rem;color:rgba(128,128,128,0.87);font-weight:300}
-.home .post__more{font-size:.8333333333rem;line-height:1.58rem;color:rgba(128,128,128,0.87);margin:0;font-weight:300}
+.home .post__more{font-size:.8rem;line-height:1.58rem;color:rgba(128,128,128,0.87);margin:0;font-weight:300;font-family:Source Sans Pro,Helvetica,sans-serif}
 @media(min-width:788px){html{font-size:21px}
 }

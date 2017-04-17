@@ -7,14 +7,21 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: ms(4);
-  line-height: $line-height*2;
+  line-height: $vertical-rythm*4;
   margin-top: $line-height;
-  margin-bottom: $line-height*2;
+  margin-bottom: $line-height;
 }
 
 h2 {
   font-size: ms(3);
-  line-height: $line-height*2;
+  line-height: $vertical-rythm*3;
+  margin-top: $line-height;
+  margin-bottom: $line-height;
+}
+
+h3 {
+  font-size: ms(2);
+  line-height: $vertical-rythm*3;
   margin-top: $line-height;
   margin-bottom: $line-height;
 }
@@ -22,6 +29,7 @@ h2 {
 p, ul, ol, pre, table, blockquote {
   font-size: ms(0);
   margin-bottom: $line-height;
+  font-family: charis_silregular, serif;
 }
 
 hr, .hr {
