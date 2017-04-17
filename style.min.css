@@ -26,13 +26,18 @@ input,select{vertical-align:middle}
 h1,h2,h3,h4,h5{font-family:Source Sans Pro,Helvetica,sans-serif}
 h1{font-size:2.44140625rem;line-height:3.16rem;margin-top:1.58rem;margin-bottom:1.58rem}
 h2{font-size:1.953125rem;line-height:2.37rem;margin-top:1.58rem;margin-bottom:1.58rem}
-h3{font-size:1.5625rem;line-height:2.37rem;margin-top:1.58rem;margin-bottom:1.58rem}
+h3{font-size:1.5625rem;line-height:2.37rem;margin-top:1.58rem;margin-bottom:.79rem}
+h4{font-size:1.25rem;line-height:1.58rem;margin-top:.79rem;margin-bottom:.79rem}
+h5{font-size:1rem;line-height:1.58rem;margin-top:.79rem;margin-bottom:.79rem;text-transform:uppercase}
 p,ul,ol,pre,table,blockquote{font-size:1rem;margin-bottom:1.58rem;font-family:charis_silregular,serif}
 hr,.hr{border:1px solid;margin:-1px 0}
 a,b,i,strong,em,small,code{line-height:0}
 sub,sup{line-height:0;position:relative;vertical-align:baseline}
 sup{top:-0.5em}
 sub{bottom:-0.25em}
+ul,ol{margin-left:1.58rem}
+blockquote{max-width:28.4217094304rem;-webkit-align-self:flex-end;-ms-flex-item-align:end;align-self:flex-end;margin:1.58rem 0 1.58rem 1.58rem}
+blockquote p{font-size:1.25rem;line-height:2.37rem;font-family:charis_silitalic,serif;color:rgba(128,128,128,0.87);margin:0}
 .site-header{padding:.79rem;box-shadow:0 0 2px rgba(0,0,0,0.15);background-color:white}
 .site-header__link{max-width:36rem;margin:0 auto;height:1.58rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
 .site-header__logo{height:100%;width:auto}
@@ -41,6 +46,7 @@ body{color:rgba(38,38,38,0.87);line-height:1.58rem}
 body.home{background-color:#fafafa}
 .site-content{max-width:36rem;margin:.79rem auto 0}
 .post{padding:.79rem;font-family:Source Sans Pro,sans-serif}
+.post .section{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column nowrap;-ms-flex-flow:column nowrap;flex-flow:column nowrap}
 .post .posted-on{font-size:.8rem;line-height:1.58rem;color:rgba(128,128,128,0.87);font-weight:300}
 .post h1{margin:0 0 1.58rem 0}
 .post .wp-post-image{max-width:100%;margin:0 auto;height:auto;margin:0 0 .79rem 0}

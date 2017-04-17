@@ -45,6 +45,11 @@ body {
   padding: $vertical-rythm;
   font-family: Source Sans Pro, sans-serif;
 
+  .section {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
   .posted-on {
     font-size: ms(-1);
     line-height: $line-height;

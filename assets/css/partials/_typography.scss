@@ -15,15 +15,30 @@ h1 {
 h2 {
   font-size: ms(3);
   line-height: $vertical-rythm*3;
-  margin-top: $line-height;
-  margin-bottom: $line-height;
+  margin-top: $vertical-rythm*2;
+  margin-bottom: $vertical-rythm*2;
 }
 
 h3 {
   font-size: ms(2);
   line-height: $vertical-rythm*3;
-  margin-top: $line-height;
-  margin-bottom: $line-height;
+  margin-top: $vertical-rythm*2;
+  margin-bottom: $vertical-rythm;
+}
+
+h4 {
+  font-size: ms(1);
+  line-height: $vertical-rythm*2;
+  margin-top: $vertical-rythm;
+  margin-bottom: $vertical-rythm;
+}
+
+h5 {
+  font-size: ms(0);
+  line-height: $vertical-rythm*2;
+  margin-top: $vertical-rythm;
+  margin-bottom: $vertical-rythm;
+  text-transform: uppercase;
 }
 
 p, ul, ol, pre, table, blockquote {
@@ -53,4 +68,22 @@ sup {
 
 sub {
   bottom: -0.25em;
+}
+
+ul, ol {
+  margin-left: $vertical-rythm*2;
+}
+
+blockquote {
+  max-width: ms(15);
+  align-self: flex-end;
+  margin: $vertical-rythm*2 0 $vertical-rythm*2 $vertical-rythm*2;
+
+  p {
+    font-size: ms(1);
+    line-height: $vertical-rythm*3;
+    font-family: charis_silitalic, serif;
+    color: map-get($colors, "mediumGray");
+    margin: 0;
+  }
 }
