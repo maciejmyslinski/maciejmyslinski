@@ -49,8 +49,9 @@ body {
 
   .wp-post-image {
     max-width: 100%;
-    margin: $vertical-rythm auto;
+    margin: 0 auto;
     height: auto;
+    margin: 0 0 $vertical-rythm 0;
   }
 
   &__link {
@@ -61,7 +62,7 @@ body {
   }
 
   &__title {
-    margin: 0;
+    margin: 0 0 $vertical-rythm 0;
     line-height: $vertical-rythm*3;
   }
 
@@ -69,6 +70,7 @@ body {
     font-size: ms(-1);
     line-height: $line-height;
     color: map-get($colors, "mediumGray");
+    font-weight: 300;
   }
 
   &__more {
@@ -76,5 +78,6 @@ body {
     line-height: $line-height;
     color: map-get($colors, "mediumGray");
     margin: 0;
+    font-weight: 300;
   }
 }
